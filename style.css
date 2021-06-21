@@ -1,0 +1,513 @@
+body{
+	padding: 0;
+	margin: 0;
+	background: #1d1b38;
+}
+.container{
+	width: 500px;
+	height: 500px;
+	background: #ffe0f7;
+	border-radius: 50px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	box-shadow: 0 0 4px #ffe0f7;
+}
+p{
+	position: relative;
+	top: 14px;
+	font-family: 'poppins', sans-serif;
+}
+.desk{
+	position: relative;
+	width: 450px;
+	height: 20px;
+	border-radius: 10px;
+	background: #005086;
+	top: 450px;
+	left: 25px;
+}
+
+/*small desk within the desk*/
+.desk:before{
+	content: " ";
+	position: absolute;
+	height: 10px;
+	width: 300px;
+	border-radius: 10px;
+	top: 4px;
+	right: 2px;
+	background: #ffffff37;
+}
+
+/*small circle within the desk*/
+.desk:after{
+	content: "";
+	position: absolute;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	top: 3px;
+	right: 304px;
+	background: #ffffff37;
+}
+
+/*For flower vase*/
+.vase{
+	width: 40px;
+	height: 0;
+	border-top: 50px solid #f6ab6c;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	position: relative;
+	top: 380px;
+	left: 60px;
+}
+/*Yellowish border on the top of the vase*/
+.vase:before{
+	content: "";
+	position: absolute;
+	height: 10px;
+	width: 60px;
+	background: #ede682;
+	bottom: 40px;
+	left: -10px;
+}
+/*Yellowish design on the vase*/
+.vase:after{
+	content: "";
+	position: absolute;
+	height: 6px;
+	width: 54px;
+	border-radius: 50%;
+	background: #ede682;
+	bottom: 30px;
+	left: -7px;
+}
+.leaf{
+	background: #62760c;
+	width: 16px;
+	height: 50px;
+	position: relative;
+	bottom: 90px;
+	border-radius: 50%;
+	z-index: -1;
+	box-shadow: 24px 0 0 0 #62760c, 12px 0 0 0 #96bb7c;
+				/*2nd leaf           back leaf*/
+}
+.laptop{
+	height: 0;
+	width: 130px;
+	border-top: 90px solid #222831;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	position: relative;
+	top: 282px;
+	left: 165px;
+}
+
+/*laptop bottom horizontal line*/
+.laptop:before{
+	width: 130px;
+	content: "";
+	position: absolute;
+	height: 6px;
+	bottom: -8px;
+	background: #222831;
+}
+
+/*the two supporter of laptop*/
+.laptop:after{
+	width: 10px;
+	content: "";
+	position: absolute;
+	height: 6px;
+	bottom: -4px;
+	left: 4px;
+	background: #222831;
+	box-shadow: 110px 0 0 0 #222831;
+}
+
+/*logo on the laptop*/
+.logo{
+	height: 20px;
+	width: 30px;
+	background: #444;
+	border-radius: 50%;
+	position: relative;
+	bottom: 60px;
+	left: 50px;
+}
+.lamp{
+	height: 20px;
+	width: 100px;
+	background-color: #000;
+	border-top-right-radius: 50px;
+	border-top-left-radius: 50px;
+	position: relative;
+	top: 270px;
+	left: 350px;
+	z-index: 1000;
+}
+
+/*design on the top of the lamp*/
+.lamp:before{
+	content: "";
+	position: absolute;
+	height: 10px;
+	width: 40px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	background-color: #000;
+	left: 50%;
+	transform: translate(-50%);
+	top: -10px;
+}
+.stand{
+	height: 90px;
+	width: 10px;
+	background-color: #fcbf1e;
+	position: absolute;
+	top: -90px;
+	left: 60px;
+	transform: translate(-50%);
+	z-index: -1;
+	transform: rotate(20deg);
+}
+
+/*2nd stand which is on the top position*/
+.stand:before{
+	content: "";
+	height: 90px;
+	width: 10px;
+	background-color: #fcbf1e;
+	position: absolute;
+	top: -61px;
+	right: 34px;
+	transform: rotate(-60deg);
+}
+/*a dot in black color which is middle of the stand*/
+.stand:after{
+	content: "";
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	position: absolute;
+	top: -6px;
+	right: -4px;
+	background-color: #000;
+}
+.bulb{
+	height: 40px;
+	width: 70px;
+	background-color: #000;
+	position: absolute;
+	bottom: 140px;
+	left: -30px;
+	border-radius: 50px 50px 0 0;
+	transform: rotate(45deg);
+}
+
+/*the dot on the bulb back*/
+.bulb:before{
+	content: "";
+	position: absolute;
+	height: 24px;
+	width: 24px;
+	background-color: #000;
+	border-radius: 50%;
+	left: 24px;
+	top: -12px;
+}
+/*front border type design*/
+.bulb:after{
+	content: "";
+	position: absolute;
+	height: 10px;
+	width: 76px;
+	background-color: #fcbf1e;
+	border-radius: 20px;
+	top: 30px;
+	right: -4px;
+	border: 1px solid black;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	cursor: pointer;
+	height: 10px;
+	width: 12px;
+	background-color: red;
+	border-radius: 2px;
+	position: absolute;
+	bottom: 26px;
+	left: 30px;
+	z-index: -1;
+	outline: none;
+}
+
+/*Light ray*/
+input[type="checkbox"]:before {
+	content: "";
+	position: absolute;
+	height: 0px;
+	width: 65px;
+	border-bottom: 260px solid #ffe78f8c;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	transform: rotate(45deg);
+	bottom: -94px;
+	right: 55px;
+	display: none;
+}
+
+/*button on/off*/
+input[type="checkbox"]:checked:before{
+	display: block;
+}
+
+/*botton size change when you click on it*/
+input[type="checkbox"]:checked{
+	height: 5px;
+}
+
+.face{
+	height: 120px;
+	width: 100px;
+	border-radius: 60%;
+	background: #f7c5a8;
+	position: relative;
+	left: 190px;
+	top: 20px;
+}
+.hair{
+	background: black;
+	height: 40px;
+	width: 90px;
+	border-radius: 50%;
+	position: relative;
+	left: 0;
+	bottom: 10px;
+	transform: rotate(-10deg);
+}
+.hair:before{
+	content: "";
+	position: absolute;
+	background: black;
+	height: 60px;
+	width: 30px;
+	border-radius: 50%;
+	transform: rotate(20deg);
+	left: -10px;
+}
+.hair:after{
+	content: "";
+	position: absolute;
+	background: black;
+	height: 60px;
+	width: 30px;
+	border-radius: 50%;
+	transform: rotate(-10deg);
+	right: -10px;
+	top: 10px;
+}
+
+.hair-1{
+	background: black;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	position: relative;
+	left: 60px;
+	bottom: 30px;
+}
+.ear{
+	height: 30px;
+	width: 20px;
+	border-radius: 50%;
+	background: #f7c5a8;
+	position: relative;
+	right: 10px;
+	bottom: 10px;
+	z-index: -1;
+	transform: rotate(-10deg); 
+}
+.ear:before{
+	content: "";
+	position: absolute;
+	height: 30px;
+	width: 20px;
+	border-radius: 50%;
+	background: #f7c5a8;
+	left: 98px;
+	bottom: -14px;
+	transform: rotate(20deg);
+}
+.specs{
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	border: 3px solid #251f44;
+	position: relative;
+	bottom: 44px;
+	left: 20px;
+}
+.specs:before{
+	content: "";
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	border: 3px solid #251f44;
+	position: absolute;
+	bottom: -3px;
+	left: 34px;
+}
+.specs:after{
+	content: "";
+	height: 4px;
+	width: 16px;
+	position: absolute;
+	top: 4px;
+	left: 20px;
+	background: #251f44;
+}
+.eye{
+	height: 12px;
+	width: 12px;
+	border-radius: 50px;
+	background: black;
+	position: relative;
+	bottom: 62px;
+	left: 30px;
+	box-shadow: 31px 0 0 0 black;
+}
+.eye:after{
+	content: "";
+	height: 6px;
+	width: 6px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	top: 5px;
+	left: 3px;
+	box-shadow: 31px 0 0 0 white; 
+}
+.nose-mouth{
+	position: relative;
+	height: 14px;
+	width: 10px;
+	border-radius: 50%;
+	box-shadow: inset 0 -4px 0 0 #ff9a76;
+	bottom: 58px;
+	left: 46px;
+}
+
+.nose-mouth:before{
+	content: "";
+	position: absolute;
+	height: 4px;
+	width: 18px;
+	border-radius: 10px;
+	background: #ff9a76;
+	top: 24px;
+	right: -4px;
+}
+.tshirt{
+	position: relative;
+	height: 100px;
+	width: 50px;
+	background: #235952;
+	transform: skewY(-20deg);
+	z-index: -1000;
+	bottom: 10px;
+}
+.tshirt:before{
+	content: "";
+	position: absolute;
+	height: 80px;
+	width: 50px;
+	background: #235952;
+	transform: skewY(40deg);
+	z-index: -1000;
+	bottom: 0;
+	left: 50px;
+}
+
+/*neck*/
+.tshirt:after{
+	content: "";
+	position: absolute;
+	height: 50px;
+	width: 20px;
+	border-radius: 20px;
+	background: #f7c5a8;
+	bottom: 90px;
+	left: 40px;
+	transform: skewY(20deg);
+	box-shadow: 42px 54px 0 0 #235952, -46px 52px 0 0 #235952; 
+				 /* shoulder*/
+}
+.circle{
+	position: relative;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	text-align: center;
+	box-sizing: border-box;
+	margin: 0;
+	color: white;
+	animation: shake 2s infinite;
+}
+@keyframes shake{
+	10%, 30%, 50%, 70%, 90%{
+		transform: translateX(-1px);
+	}
+	20%, 40%, 60%, 80%{
+		transform: translateX(1px);
+	}
+}
+
+.c1{
+	background: #2d334a;
+	box-shadow: inset 4px -10px 0 0 #1b1f2d96;
+	bottom: 300px;
+	left: 120px;
+	font-weight: bold;
+}
+.c2{
+	background: #0c9463;
+	box-shadow: inset 4px -10px 0 0 #1b1f2d96;
+	bottom: 300px;
+	left: 80px;
+	font-weight: bold;
+}
+.c3{
+	background: #ef4339;
+	box-shadow: inset 4px -10px 0 0 #1b1f2d96;
+	bottom: 300px;
+	left: 120px;
+	font-weight: bold;
+}
+.c4{
+	background: #484c7f;
+	box-shadow: inset 4px -10px 0 0 #1b1f2d96;
+	bottom: 530px;
+	left: 300px;
+	font-weight: bold;
+}
+.c5{
+	background: #010a43;
+	box-shadow: inset 4px -10px 0 0 #1b1f2d96;
+	bottom: 530px;
+	left: 340px;
+	font-weight: bold;
+}
+.c6{
+	background: #fb0091;
+	box-shadow: inset 4px -10px 0 0 #1b1f2d96;
+	bottom: 530px;
+	left: 300px;
+	font-weight: bold;
+}
